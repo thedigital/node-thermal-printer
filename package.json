@@ -1,11 +1,11 @@
 {
-  "name": "node-thermal-printer",
-  "version": "2.0.0",
-  "description": "Made to work with Epson and Star thermal printers",
+  "name": "@thedigital/thermal-printer-esmodule",
+  "version": "2.1.0",
+  "description": "Made to work with Epson and Star thermal printers - ES Module build",
   "main": "node-thermal-printer.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Klemen1337/node-thermal-printer"
+    "url": "git+https://github.com/thedigital/node-thermal-printer.git"
   },
   "keywords": [
     "thermal",
@@ -13,16 +13,25 @@
     "epson",
     "star"
   ],
-  "author": "Klemen Kastelic <klemen.kast@gmail.com> (http://kastelic.net/)",
+  "author": "Guillaume Ferrand <guillaume.ferrand@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Klemen1337/node-thermal-printer/issues"
+    "url": "https://github.com/thedigital/node-thermal-printer/issues"
   },
-  "homepage": "https://github.com/Klemen1337/node-thermal-printer",
+  "homepage": "https://github.com/thedigital/node-thermal-printer",
   "dependencies": {
     "net": "^1.0.2",
     "pngjs": "^3.2.0",
     "unorm": "^1.4.1",
     "write-file-queue": "0.0.1"
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build node-thermal-printer.js"
   }
 }
