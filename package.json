@@ -1,7 +1,7 @@
 {
   "name": "@thedigital/thermal-printer-esmodule",
-  "version": "2.1.0",
-  "description": "Made to work with Epson and Star thermal printers - ES Module build",
+  "version": "2.1.1",
+  "description": "Made to work with Epson and Star thermal printers",
   "main": "node-thermal-printer.js",
   "repository": {
     "type": "git",
