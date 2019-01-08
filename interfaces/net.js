@@ -43,8 +43,9 @@ NetPrint.prototype.isPrinterConnected = function(exists){
     port : this.port,
     timeout: this.timeout
   }, function() {
-    exists(true);
-    printer.end();
+    printer.end().on('end', function() {
+      exists(true);
+    });
   });
 
   printer.on('error', function (err) {
