@@ -11,7 +11,7 @@ module.exports = {
     HW_INIT    : new Buffer([0x1b, 0x40]),          // Clear data in buffer and reset modes
     HW_SELECT  : new Buffer([0x1b, 0x3d, 0x01]),      // Printer select
     HW_RESET   : new Buffer([0x1b, 0x3f, 0x0a, 0x00]),  // Reset printer hardware
-    BEEP       : new Buffer([0x1b, 0x1e]),              // Sounds built-in buzzer (if equipped)
+    BEEP       : new Buffer([0x1b, 0x42, 0x02, 0x09]),  // Sounds built-in buzzer (if equipped)
     UPSIDE_DOWN_ON  : new Buffer([0x1b,0x7b,0x01]),     // Upside down printing ON (rotated 180 degrees).
     UPSIDE_DOWN_OFF : new Buffer([0x1b,0x7b,0x00]),     // Upside down printing OFF (default).
 
